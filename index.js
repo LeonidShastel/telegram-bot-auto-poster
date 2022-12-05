@@ -7,10 +7,9 @@ const {DataBase} = require("./controllers/commands");
     try {
         await DataBase.connect()
 
+        console.log("Bot started")
         ListenerClient.startListener()
         await setupBot().launch()
-
-        console.log("</ Бот успешно запущен >")
     } catch (error) {
         console.log('Ошибка запуска: ', error)
     }

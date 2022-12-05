@@ -29,7 +29,6 @@ class Listener {
     async sendMessage(customMessages = null){
         try {
             let messages = customMessages;
-            console.log(new Date().toLocaleTimeString())
 
             if (customMessages === null){
                 this.date = new Date();
